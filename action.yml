@@ -1,0 +1,17 @@
+name: "Hello World"
+description: "This is a simple hello world action"
+author: Artem Lajko
+branding:
+  icon: "activity"
+  color: "blue"
+
+inputs:
+  custom-text:
+    description: "Custom text to echo"
+    required: true
+
+runs:
+  using: docker
+  image: Dockerfile
+  args:
+    - ${{ inputs.custom-text }}
