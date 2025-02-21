@@ -18,8 +18,4 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Hello World
-        uses: ./
-        with:
-          custom-text: "Hi, my name is XY!"
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run ${{ secrets.GITHUB_TOKEN }}
