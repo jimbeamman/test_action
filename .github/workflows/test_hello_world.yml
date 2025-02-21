@@ -18,4 +18,4 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Hello World
-      run ${{ secrets.GITHUB_TOKEN }}
+        run ${{ secrets.GITHUB_TOKEN }}
